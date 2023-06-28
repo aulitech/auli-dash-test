@@ -27,6 +27,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"firebase": "^9.23.0"
+		"firebase": "^9.23.0",
+		"fs": "^0.0.1-security",
+		"fs-extra": "^11.1.1"
 	}
 }

@@ -1,8 +1,6 @@
 import { writable } from "svelte/store";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
-import { auth, db } from "../lib/firebase/firebase";
-import { collection, addDoc } from "firebase/firestore"; 
-
+import { auth} from "../lib/firebase/firebase";
 
 export const authStore = writable({
     user: null,
@@ -22,11 +20,19 @@ export const authHandlers = {
     }
 }
 
-export const userNames = {
+export const todoStore = writable({
+    data: []
+})
+
+export const showNav = writable({
+    isUser: false
+})
+
+/*export const userNames = {
     addnames: async (first, last) => {
         await addDoc(collection(db, "users"), {
             first: first,
             last: last
         })
     }
-}
+}*/

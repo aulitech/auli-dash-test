@@ -2,9 +2,15 @@
     import { onMount } from 'svelte';
     import { auth, db } from '../lib/firebase/firebase'
 	import { getDoc, doc, setDoc } from 'firebase/firestore';
-    import {authStore} from "../store/store";
+    import {authStore, showNav} from "../store/store";
+	import Navbar from '../components/Navbar.svelte';
 
     const nonAuthRoutes = ["/", "product"]
+
+    let storedNav = false;
+    showNav.subscribe((value) => {
+        storedNav = value;
+    })
 
     onMount(() => {
         console.log('mounting')
@@ -19,6 +25,12 @@
             if (user && currentPath === '/') {
                 window.location.href = "/dashboard";
                 return;
+            }
+
+            if (user) {
+                showNav.set({
+                    isUser: true
+                })
             }
 
             if (!user) {
@@ -56,9 +68,14 @@
     })
 </script>
 
-<div class="main-container">
-    
-    <slot/>
+
+<div>
+    {#if storedNav.isUser}
+    <Navbar/>
+    {/if}
+    <div class="main-container">
+        <slot/>
+    </div>
 </div>
 
 <style>
