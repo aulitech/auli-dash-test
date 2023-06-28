@@ -10,13 +10,13 @@ import { getAuth } from 'firebase/auth';
 // Your web app's Firebase configuration
 const firebaseConfig = {
   // api key from .env not working need to fix later
-  apiKey: import.meta.env.VITE_API_KEY,
-  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_APP_ID,
-  measurementId: import.meta.env.VITE_MEASUREMENT_ID
+  apiKey: "AIzaSyDKGTT4oDYvvJ76U0l5CHIW9_5xb-DYyXA",
+  authDomain: "dash-test-fb96a.firebaseapp.com",
+  projectId: "dash-test-fb96a",
+  storageBucket: "dash-test-fb96a.appspot.com",
+  messagingSenderId: "971850842397",
+  appId: "1:971850842397:web:c88516a4c0320cc78a61f4",
+  measurementId: "G-G5YSGZX63W"
 };
 
 // Initialize Firebase
