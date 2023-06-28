@@ -1,1 +1,0 @@
-import{w as i,c as n,s as o,a as r}from"./vendor.3d0d1b4f.js";import{a as t}from"./firebase.377a4e15.js";const u=i({user:null,loading:!0,data:{}}),c={signup:async(a,s)=>{await n(t,a,s)},login:async(a,s)=>{await o(t,a,s)},logout:async()=>{await r(t)}};export{u as a,c as b};

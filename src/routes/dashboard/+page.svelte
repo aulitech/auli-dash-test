@@ -11,7 +11,7 @@
     <div class="header-container">
         <h1>You have been logged in!</h1>
         <div>
-            <button on:click={authhandlers.logout}>Log Out</button>
+            <button on:click={authHandlers.logout}>Log Out</button>
         </div>
     </div>
     <main>
