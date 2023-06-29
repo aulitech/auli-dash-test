@@ -9,16 +9,41 @@
     }
 </script>
 
-<nav>
-    <a href="/dashboard">To Do List</a>
-    <a href="/fileTest">File Test</a>
-    <div>
-        <button on:click={authHandlers.logout}>Log Out</button>
+<div>
+    <div class="head">
+        <img src="/fulllogo_transparent.png" alt="full logo" width="10%"/>
+        <button button on:click={authHandlers.logout}>Log Out</button>
     </div>
-</nav>
+    <nav>
+        <a href="/dashboard">Demo</a>
+        <a href="/fileTest">Configure</a>
+    </nav>
+</div>
+
+    
+
 
 
 <style>
+    .head {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        color:#52525b;
+        background-color: #fafafa;
+    }
+
+
+
+    button {
+        padding: 2px 6px;
+        color: #52525b;
+        border: none;
+        border-radius: 5px;
+        display: flex;
+    }
+
     nav {
         display: flex;
         flex-direction: row;
@@ -28,16 +53,11 @@
     }
     nav a{
         margin: .5em;
-        color: white;
         text-decoration: none;
         font-weight: 800;
+        color:#fafafa;
     }
-    nav button {
-        padding: 2px 6px;
-        background: white;
-        color: #52525b;
-        border: none;
-        border-radius: 5px;
-        display: flex;
+    nav a:hover{
+        text-decoration: underline;
     }
 </style>
