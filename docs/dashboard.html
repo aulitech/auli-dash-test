@@ -6,24 +6,35 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		
-		<link href="./_app/immutable/assets/0.b9897c42.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/3.ef366f5c.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.abfdd340.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.e108d1fd.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.8c48042f.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.0378bb41.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.fef20e5f.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.726d90aa.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.32a79747.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/store.6c7b09e5.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/3.078bcc0e.js">
+		<link href="./_app/immutable/assets/0.b3ca1afb.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/3.2387e540.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.8794e856.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.095dc040.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.0eaca5b5.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.9d26431f.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.7f83eb02.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.cf2b5a39.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.f257a4b5.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/store.33c7b926.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/3.452bec63.js">
+		<style>
+			* {
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+				transition-duration: 200ms;
+			}
+			html {
+				font-family: 'Poppins', sans-serif;
+			}
+		</style>
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">  <div class="main-container svelte-1wcfmqj"><div class="main-container svelte-88e90x"><div class="header-container svelte-88e90x"><h1 data-svelte-h="svelte-1of7j9">You have been logged in!</h1> <div><button class="svelte-88e90x" data-svelte-h="svelte-1o27alj">Log Out</button></div></div> <main class="svelte-88e90x" data-svelte-h="svelte-oghr3g"></main> </div> </div> 
+		<div style="display: contents">  <div> <div class="main-container svelte-1wcfmqj"><div class="main-container svelte-100dazd"><div class="header-container svelte-100dazd" data-svelte-h="svelte-96hy8z"><h1>You have been logged in.</h1></div> <div class="header-container svelte-100dazd"><button class="saveBtn svelte-100dazd" data-svelte-h="svelte-1v8jjwa">Save</button> </div> <main class="svelte-100dazd"><div><p>1. Something to do</p> <div class="actions" data-svelte-h="svelte-1hjx7tw"><button>--trash--</button> <button>--edit--</button></div> </div></main> <div class="enterTodo svelte-100dazd"><input type="text" placeholder="Enter todo" class="svelte-100dazd" value=""> <button class="svelte-100dazd" data-svelte-h="svelte-15sgq9c">Add</button></div> </div></div> </div> 
 			
 			<script>
 				{
-					__sveltekit_2g15yt = {
+					__sveltekit_kq7t21 = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -33,8 +44,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.abfdd340.js"),
-						import("./_app/immutable/entry/app.fef20e5f.js")
+						import("./_app/immutable/entry/start.8794e856.js"),
+						import("./_app/immutable/entry/app.7f83eb02.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 3],
